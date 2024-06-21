@@ -1,32 +1,22 @@
-import readlineSync from 'readline-sync';
-import greeting, { userName } from '../cli.js';
+import launchGame from '../index.js';
 
-greeting();
+const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const isEven = (number) => {
+  const result = (number % 2 === 0) ? 'yes' : 'no';
+  return result;
+};
+
+const getCurrentQuestion = () => {
+  const number = Math.floor(Math.random() * 100);
+
+  const correctAnswer = isEven(number);
+  const question = `${number}`;
+  return [correctAnswer, question];
+};
 
 const playBrainEven = () => {
-  let currentQuestion = 1;
-
-  while (currentQuestion <= 3) {
-    const number = Math.floor(Math.random() * 100);
-    const correctAnswer = (number % 2 === 0) ? 'yes' : 'no';
-
-    console.log(`Question: ${number}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    if (correctAnswer === userAnswer) {
-      currentQuestion += 1;
-      console.log('Correct!');
-      if (currentQuestion === 4) {
-        console.log(`Congratulations, ${userName}!`);
-      }
-    } else {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`);
-      console.log(`Let's try again, ${userName}!`);
-      break;
-    }
-  }
+  launchGame(gameRules, getCurrentQuestion);
 };
 
 export default playBrainEven;

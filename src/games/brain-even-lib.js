@@ -1,4 +1,5 @@
 import launchGame from '../index.js';
+import getRandomInt from '../utils.js';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -8,7 +9,7 @@ const isEven = (number) => {
 };
 
 const getCurrentQuestion = () => {
-  const number = Math.floor(Math.random() * 100);
+  const number = getRandomInt(0, 100);
 
   const correctAnswer = isEven(number);
   const question = `${number}`;

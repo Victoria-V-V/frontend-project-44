@@ -1,5 +1,6 @@
 /* eslint-disable no-param-reassign */
 import launchGame from '../index.js';
+import getRandomInt from '../utils.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
 
@@ -14,8 +15,8 @@ const getGcd = (number1, number2) => {
 };
 
 const getCurrentQuestion = () => {
-  const number1 = Math.floor(Math.random() * 50);
-  const number2 = Math.floor(Math.random() * 50);
+  const number1 = getRandomInt(1, 50);
+  const number2 = getRandomInt(1, 50);
 
   const correctAnswer = getGcd(number1, number2);
   const question = `${number1} ${number2}`;

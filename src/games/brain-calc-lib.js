@@ -1,4 +1,5 @@
 import launchGame from '../index.js';
+import getRandomInt from '../utils.js';
 
 const gameRules = 'What is the result of the expression?';
 
@@ -17,9 +18,9 @@ const caclulate = (operator, number1, number2) => {
 
 const getCurrentQuestion = () => {
   const operatorsArray = ['+', '-', '*'];
-  const operator = operatorsArray[Math.floor(Math.random() * operatorsArray.length)];
-  const number1 = Math.floor(Math.random() * 10);
-  const number2 = Math.floor(Math.random() * 10);
+  const operator = operatorsArray[getRandomInt(0, 2)];
+  const number1 = getRandomInt(0, 10);
+  const number2 = getRandomInt(0, 10);
 
   const correctAnswer = caclulate(operator, number1, number2);
   const question = `${number1} ${operator} ${number2}`;

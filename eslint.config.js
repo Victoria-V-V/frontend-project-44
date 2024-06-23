@@ -1,25 +1,20 @@
-import globals from "globals";
+import globals from 'globals';
 
-import path from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
-import pluginJs from "@eslint/js";
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { FlatCompat } from '@eslint/eslintrc';
+import pluginJs from '@eslint/js';
 import importPlugin from 'eslint-plugin-import';
-import js from "@eslint/js";
-// import { fixupPluginRules } from "@eslint/compat";
-// import example from "eslint-plugin-example";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({
   baseDirectory: __dirname,
-  recommendedConfig: pluginJs.configs.recommended
+  recommendedConfig: pluginJs.configs.recommended,
 });
-
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
-  js.configs.recommended,
   {
     languageOptions: {
       globals: {
@@ -35,14 +30,13 @@ export default [
     },
     plugins: {
       import: importPlugin,
-      // example: fixupPluginRules(example)
     },
     rules: {
       ...importPlugin.configs.recommended.rules,
     },
   },
   {
-    ignores: ["**/node_modules/", ".git/", 'eslint.config.js'],
+    ignores: ['**/node_modules/', '.git/'],
   },
   ...compat.extends('airbnb-base'),
   {
@@ -64,8 +58,8 @@ export default [
       'no-console': 'off',
       'import/no-extraneous-dependencies': 'off',
       'import/no-amd': 'off', // added
-      'import/newline-after-import': 'off', //added
-      'import/no-mutable-exports': 'off', //added
+      'import/newline-after-import': 'off', // added
+      'import/no-mutable-exports': 'off', // added
     },
   },
 ];

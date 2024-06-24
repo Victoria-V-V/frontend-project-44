@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
-import greeting, { userName } from './cli.js';
+import greeting from './cli.js';
 
 const launchGame = (gameRules, getCurrentQuestion) => {
-  greeting();
+  const userName = greeting();
   console.log(gameRules);
 
   let currentAnswer = 0;

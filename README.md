@@ -36,7 +36,7 @@ brain-even
 
 #### Demo
 
-[![asciicast](https://asciinema.org/a/FmnOy85vC3FJ8hDYp11WM2via.svg)](https://asciinema.org/a/FmnOy85vC3FJ8hDYp11WM2via)
+[![asciicast](https://asciinema.org/a/kxS8TxoGkAukpv3FFUw1dDhJM.svg)](https://asciinema.org/a/kxS8TxoGkAukpv3FFUw1dDhJM)
 
 
 ### Brain-calc
@@ -51,7 +51,7 @@ brain-calc
 
 #### Demo
 
-[![asciicast](https://asciinema.org/a/nfKzhOBJDPGQOGUJ1Va5u7Sjd.svg)](https://asciinema.org/a/nfKzhOBJDPGQOGUJ1Va5u7Sjd)
+[![asciicast](https://asciinema.org/a/ftULAOsM1SSWu35ub70BUiVDg.svg)](https://asciinema.org/a/ftULAOsM1SSWu35ub70BUiVDg)
 
 
 ### Brain-gcd
@@ -66,7 +66,7 @@ brain-gcd
 
 #### Demo
 
-[![asciicast](https://asciinema.org/a/BEPkLoAMWjRh5ofto5qBm84vn.svg)](https://asciinema.org/a/BEPkLoAMWjRh5ofto5qBm84vn)
+[![asciicast](https://asciinema.org/a/sSKZs5LOAnLZCRSnzfRrakWmQ.svg)](https://asciinema.org/a/sSKZs5LOAnLZCRSnzfRrakWmQ)
 
 
 ### Brain-progression
@@ -81,7 +81,7 @@ brain-progression
 
 #### Demo
 
-[![asciicast](https://asciinema.org/a/n3MiNPPGJ7eGLx3hhESCdWSGh.svg)](https://asciinema.org/a/n3MiNPPGJ7eGLx3hhESCdWSGh)
+[![asciicast](https://asciinema.org/a/inlwJM3ODFX6hfoQCsPRzOrw1.svg)](https://asciinema.org/a/inlwJM3ODFX6hfoQCsPRzOrw1)
 
 
 ### Brain-prime
@@ -96,4 +96,4 @@ brain-prime
 
 #### Demo
 
-[![asciicast](https://asciinema.org/a/Hajhg3sN3N9SQu8VxGxJc9tDB.svg)](https://asciinema.org/a/Hajhg3sN3N9SQu8VxGxJc9tDB)
+[![asciicast](https://asciinema.org/a/6RriRcp2Hrjdw690eCwtWodI2.svg)](https://asciinema.org/a/6RriRcp2Hrjdw690eCwtWodI2)
